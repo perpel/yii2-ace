@@ -1,0 +1,33 @@
+{
+	"name": "perpel/yii2-ace",
+    "description": "weixin mini program helper",
+    "license": "Apache-2.0",
+    "minimum-stability": "stable",
+    "version": "1.0.1",
+    "authors": [
+        {
+            "name": "kongdehui",
+            "email": "572821520@qq.com"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/perpel/yii2-ace"
+    },
+    "require": {
+        "yiisoft/yii2": ">=2.0.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "yii\\ace\\": ""
+        }
+    },
+	"extra": {
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        },
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    }
+}
