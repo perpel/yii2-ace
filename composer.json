@@ -1,20 +1,26 @@
 {
 	"name": "perpel/yii2-ace",
-    "description": "weixin mini program helper",
+    "description": "yii2 ace",
+	"keywords": [  
+		"yii2",  
+		"terrytest"  
+	  ],  
     "license": "Apache-2.0",
     "minimum-stability": "stable",
-    "version": "1.0.1",
     "authors": [
         {
             "name": "kongdehui",
             "email": "572821520@qq.com"
         }
     ],
+	"homepage": "https://github.com/zqy234/terrytest",  
+  "type": "yii2-extension",  
+  "license": "MIT", 
     "support": {
         "source": "https://github.com/perpel/yii2-ace"
     },
     "require": {
-        "yiisoft/yii2": ">=2.0.6"
+		"bower-asset/cornernote-ace": "*"
     },
     "autoload": {
         "psr-4": {
