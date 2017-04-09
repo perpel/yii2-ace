@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "\\perpel\\yii\\ace\\": ""
+            "perpel\\": "src/"
         }
     },
 	"extra": {
