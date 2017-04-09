@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "perpel\\": "src/"
+            "\\yiip\\ace\\": "yii2-ace/src/"
         }
     },
 	"extra": {
