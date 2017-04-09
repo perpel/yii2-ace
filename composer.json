@@ -20,16 +20,17 @@
         "source": "https://github.com/perpel/yii2-ace"
     },
     "require": {
+		"yiisoft/yii2-bootstrap": "*",
 		"bower-asset/cornernote-ace": "*"
     },
     "autoload": {
         "psr-4": {
-            "yii\\ace\\": ""
+            "perpel\\ace\\": "src"
         }
     },
 	"extra": {
         "branch-alias": {
-            "dev-master": "1.0.x-dev"
+            "dev-master": ""
         },
         "asset-installer-paths": {
             "npm-asset-library": "vendor/npm",
