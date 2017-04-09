@@ -3,10 +3,8 @@
     "description": "yii2 ace",
 	"keywords": [  
 		"yii2",  
-		"terrytest"  
+		"ace"  
 	  ],  
-    "license": "Apache-2.0",
-    "minimum-stability": "stable",
     "authors": [
         {
             "name": "kongdehui",
