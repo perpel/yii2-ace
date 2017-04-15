@@ -1,28 +1,7 @@
 <?php
 namespace yiip\ace\widgets;
 
-use common\models\ace\Sidebar;
-use yii\base\Exception;
 use yii\base\Widget;
-use yii\helpers\ArrayHelper;
-use yii\helpers\Html;
-
-class MenuIterator extends \ArrayIterator implements \RecursiveIterator
-{
-    public function hasChildren()
-    {
-        $current = $this->current();
-        return !empty($current['children']);
-        // TODO: Implement hasChildren() method.
-    }
-
-    public function getChildren()
-    {
-        $current = $this->current();
-        return new self($current['children']);
-        // TODO: Implement getChildren() method.
-    }
-}
 
 class SiderBarSplTree extends \RecursiveIteratorIterator
 {
@@ -68,7 +47,7 @@ class SiderBar extends Widget
     {
         $obj = new \yiip\ace\libs\tree\ArrayToTree($this->tree);
 
-        $sideBarTree = new SiderBarSplTree(new MenuIterator($obj->tree), \RecursiveIteratorIterator::SELF_FIRST);
+        $sideBarTree = new SiderBarSplTree(new \yiip\ace\libs\tree\MenuIterator($obj->tree), \RecursiveIteratorIterator::SELF_FIRST);
         foreach ($sideBarTree as $item) {
             $sideBarTree->sideBarHtml .= $sideBarTree->createNode($item, $sideBarTree->callHasChildren());
         }

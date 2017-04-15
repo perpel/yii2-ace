@@ -19,7 +19,7 @@
     },
     "require": {
 		"yiisoft/yii2-bootstrap": "*",
-		"bower-asset/cornernote-ace": "*"
+		"bower-asset/admin-lte": "*"
     },
     "autoload": {
         "psr-4": {
