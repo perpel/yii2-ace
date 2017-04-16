@@ -1,25 +1,23 @@
-<div id="navbar" class="navbar navbar-default ace-save-state">
-    <div class="navbar-container ace-save-state" id="navbar-container">
+<header class="main-header">
 
-        <button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
-            <span class="sr-only">Toggle sidebar</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
+    <!-- Logo -->
+    <a href="index2.html" class="logo">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini"><b>A</b>LT</span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg"><b>Admin</b>LTE</span>
+    </a>
 
-        <div class="navbar-header pull-left">
-            <a href="index.html" class="navbar-brand">
-                <small>
-                    <i class="fa fa-leaf"></i>
-                    Ace Admin
-                </small>
-            </a>
-        </div>
-
-        <div class="navbar-buttons navbar-header pull-right" role="navigation">
-            <ul class="nav ace-nav">
-
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+        </a>
+        <!-- Navbar Right Menu -->
+        <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+                <!-- Messages: style can be found in dropdown.less-->
                 <!--tools list-->
                 <?php foreach ($tools as $list):?>
                     <?= $list?>
@@ -28,8 +26,12 @@
                 <!--personal list-->
                 <?= $personal?>
 
+                <!-- Control Sidebar Toggle Button -->
+                <li>
+                    <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                </li>
             </ul>
         </div>
 
-    </div><!-- /.navbar-container -->
-</div>
+    </nav>
+</header>

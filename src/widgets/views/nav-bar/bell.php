@@ -1,67 +1,42 @@
-<li class="purple dropdown-modal">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                        <i class="ace-icon fa fa-bell icon-animated-bell"></i>
-                        <span class="badge badge-important">8</span>
+<!-- Notifications: style can be found in dropdown.less -->
+<li class="dropdown notifications-menu">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <i class="fa fa-bell-o"></i>
+        <span class="label label-warning">10</span>
+    </a>
+    <ul class="dropdown-menu">
+        <li class="header">You have 10 notifications</li>
+        <li>
+            <!-- inner menu: contains the actual data -->
+            <ul class="menu">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-users text-aqua"></i> 5 new members joined today
                     </a>
-
-                    <ul class="dropdown-menu-right dropdown-navbar navbar-pink dropdown-menu dropdown-caret dropdown-close">
-                        <li class="dropdown-header">
-                            <i class="ace-icon fa fa-exclamation-triangle"></i>
-                            8 Notifications
-                        </li>
-
-                        <li class="dropdown-content">
-                            <ul class="dropdown-menu dropdown-navbar navbar-pink">
-                                <li>
-                                    <a href="#">
-                                        <div class="clearfix">
-                                            <span class="pull-left">
-                                                <i class="btn btn-xs no-hover btn-pink fa fa-comment"></i>
-                                                New Comments
-                                            </span>
-                                            <span class="pull-right badge badge-info">+12</span>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        <i class="btn btn-xs btn-primary fa fa-user"></i>
-                                        Bob just signed up as an editor ...
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        <div class="clearfix">
-                                            <span class="pull-left">
-                                                <i class="btn btn-xs no-hover btn-success fa fa-shopping-cart"></i>
-                                                New Orders
-                                            </span>
-                                            <span class="pull-right badge badge-success">+8</span>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        <div class="clearfix">
-                                            <span class="pull-left">
-                                                <i class="btn btn-xs no-hover btn-info fa fa-twitter"></i>
-                                                Followers
-                                            </span>
-                                            <span class="pull-right badge badge-info">+11</span>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="dropdown-footer">
-                            <a href="#">
-                                See all notifications
-                                <i class="ace-icon fa fa-arrow-right"></i>
-                            </a>
-                        </li>
-                    </ul>
                 </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
+                        page and may cause design problems
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-users text-red"></i> 5 new members joined
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-shopping-cart text-green"></i> 25 sales made
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-user text-red"></i> You changed your username
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="footer"><a href="#">View all</a></li>
+    </ul>
+</li>

@@ -1,3 +1,3 @@
-# yii2-ace
+# yii2-lte
 
-Yii2 Ace Admin
+Yii2 Admin LTE

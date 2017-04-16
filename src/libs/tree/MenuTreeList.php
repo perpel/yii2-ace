@@ -12,8 +12,8 @@ class MenuTreeList
         $treeObj = new \RecursiveIteratorIterator(new \yiip\ace\libs\tree\MenuIterator($obj->tree), \RecursiveIteratorIterator::SELF_FIRST);
         foreach ($treeObj as $item) {
             $dept = $treeObj->getDepth();
-            $menu[$item['id']] = str_repeat('—', $dept) . $item['title'];
+            $menu[$item['id']] = '| ' . str_repeat('—', $dept) . $item['title'] . "({$dept})";
         }
-        return ArrayHelper::merge(array(0=>'|无'), $menu);
+        return ArrayHelper::merge(array(0=>'| 无(0)'), $menu);
     }
 }

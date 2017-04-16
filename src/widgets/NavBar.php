@@ -1,5 +1,5 @@
 <?php
-namespace yiip\ace\widgets;
+namespace yiip\lte\widgets;
 
 use yii\base\Widget;
 

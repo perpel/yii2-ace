@@ -1,9 +1,9 @@
 {
-	"name": "perpel/yii2-ace",
-    "description": "yii2 ace",
+	"name": "perpel/yii2-lte",
+    "description": "yii2 lte",
 	"keywords": [  
 		"yii2",  
-		"ace"  
+		"admin lte"
 	  ],  
     "authors": [
         {
@@ -11,11 +11,11 @@
             "email": "572821520@qq.com"
         }
     ],
-	"homepage": "https://github.com/perpel/yii2-ace",  
-  "type": "yii2-extension",  
-  "license": "MIT", 
+	"homepage": "https://github.com/perpel/yii2-lte",
+    "type": "yii2-extension",
+    "license": "MIT",
     "support": {
-        "source": "https://github.com/perpel/yii2-ace"
+        "source": "https://github.com/perpel/yii2-lte"
     },
     "require": {
 		"yiisoft/yii2-bootstrap": "*",
@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "yiip\\ace\\": "src/"
+            "yiip\\lte\\": "src/"
         }
     },
 	"extra": {
