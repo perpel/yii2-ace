@@ -1,5 +1,5 @@
 <?php
-namespace yiip\ace\libs\tree;
+namespace yiip\lte\libs\tree;
 
 class ArrayToTree
 {

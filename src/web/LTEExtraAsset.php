@@ -9,11 +9,12 @@ use yii\web\AssetBundle;
  */
 class LTEExtraAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/bower/cornernote-ace/assets';
+    public $sourcePath = '@vendor/bower/admin-lte';
+    public $css = [
+    ];
     public $js = [
-        'js/ace-extra.min.js',
     ];
-    public $jsOptions = [
-        'position' => \yii\web\View::POS_HEAD,
-    ];
+//    public $jsOptions = [
+//        'position' => \yii\web\View::POS_HEAD,
+//    ];
 }

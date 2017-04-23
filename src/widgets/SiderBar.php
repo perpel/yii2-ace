@@ -2,6 +2,7 @@
 namespace yiip\lte\widgets;
 
 use yii\base\Widget;
+use yii\bootstrap\Html;
 
 class SiderBar extends Widget
 {
@@ -9,9 +10,9 @@ class SiderBar extends Widget
 
     public function run()
     {
-        $obj = new \yiip\ace\libs\tree\ArrayToTree($this->tree);
+        $obj = new \yiip\lte\libs\tree\ArrayToTree($this->tree);
 
-        $sideBarTree = new SiderBarSplTree(new \yiip\ace\libs\tree\MenuIterator($obj->tree), \RecursiveIteratorIterator::SELF_FIRST);
+        $sideBarTree = new SiderBarSplTree(new \yiip\lte\libs\tree\MenuIterator($obj->tree), \RecursiveIteratorIterator::SELF_FIRST);
         foreach ($sideBarTree as $item) {
             $sideBarTree->sideBarHtml .= $sideBarTree->createNode($item, $sideBarTree->callHasChildren());
         }
@@ -47,11 +48,16 @@ class SiderBarSplTree extends \RecursiveIteratorIterator
 
     public function createNode($node = [], $isChildren = false)
     {
-        $li = $node['active']?'<li class="active">':'<li>';
+        $href = ($node['href'] == '#')?'#':['/' . $node['href']];
+        $node['active']?($act='active'):($act='');
         if ($isChildren) {
-            return "<li class='treeview'><a href=\"{$node['href']}\"><i class=\"fa {$node['icon']}\"></i> <span> {$node['title']} </span><span class=\"pull-right-container\"><i class=\"fa fa-angle-left pull-right\"></i></span></a>";
+            $cls = ($act=='active')?'treeview active':'treeview';
+            $a = Html::a("<i class=\"fa {$node['icon']}\"></i> <span>{$node['title']}</span><span class=\"pull-right-container\"><i class=\"fa fa-angle-left pull-right\"></i></span>", $href, ['data-item'=>$node['href']]);
+            return "<li class='{$cls}'>{$a}";
         } else {
-            return "<li><a href=\"{$node['href']}\"><i class=\"fa {$node['icon']}\"></i> <span>{$node['title']}</span><span class=\"pull-right-container\"></span></a></li>";
+            $cls = ($act=='active')?' class="active"':'';
+            $a = Html::a("<i class=\"fa {$node['icon']}\"></i> <span>{$node['title']}</span>", $href, ['data-item'=>$node['href']]);
+            return "<li{$cls}>{$a}</li>";
         }
     }
 

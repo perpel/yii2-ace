@@ -14,13 +14,13 @@ class LTEAsset extends AssetBundle
         //'css/ace_yii.css',
     ];
     public $js = [
-        //'js/ace_yii.js',
+        'js/lte-yii.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapAsset',
-        'yiip\ace\web\AceBaseAsset',
-        //'yiip\ace\web\AceExtraAsset'
+        'yiip\lte\web\LTEBaseAsset',
+        'yiip\lte\web\LTEExtraAsset'
     ];
 
 }

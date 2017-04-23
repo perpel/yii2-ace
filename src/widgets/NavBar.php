@@ -5,7 +5,6 @@ use yii\base\Widget;
 
 class Navbar extends Widget
 {
-    public $baseUrl = '';
 
     public function run()
     {
@@ -37,7 +36,6 @@ class Navbar extends Widget
         $avatar = \Yii::$app->user->identity->avatar;
         $username = \Yii::$app->user->identity->username;
         return $this->render('nav-bar/personal', [
-            'baseUrl' => $this->baseUrl,
             'avatar' => empty($avatar) ? 'default.png' : $avatar,
             'username' => empty($username) ? 'AceAdmin' : $username,
         ]);
